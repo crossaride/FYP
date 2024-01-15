@@ -10,7 +10,7 @@ NetBeans IDE 8.2
 Java
 
 # Other Requirements:
-Java jdk-1.8.0_251
-JSoN parser (jackson)
-JSoN parser (gson)
-Base64 commons-codec-1.7
+- Java jdk-1.8.0_251
+- JSoN parser (jackson)
+- JSoN parser (gson)
+- Base64 commons-codec-1.7
