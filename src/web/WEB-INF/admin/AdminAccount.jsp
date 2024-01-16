@@ -1,7 +1,7 @@
 <%-- 
     Document   : account-admin
     Created on : 15-Aug-2023, 14:54:07
-    Author     : kenne
+    Author     : kenneth
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Misc -->
         <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -20,6 +21,7 @@
 
         <!-- Title -->
         <title>Account Management</title>
+
         <!-- Hyperlinks -->
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/admin.css">  
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/adminTable.css">
