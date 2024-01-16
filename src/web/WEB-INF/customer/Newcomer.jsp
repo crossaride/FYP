@@ -1,21 +1,31 @@
-<!doctype html>
+<%-- 
+    Document   : account-admin
+    Created on : ‎10-Jan-2024, ‏‎04:22:21 ‎
+    Author     : kenneth
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Title -->   
         <title>Create Profile</title>
+        
+        <!-- Misc -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        
         <!-- Hyperlinks -->
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/newcomer.css">
         <script type = "text/javascript" src="<%= request.getContextPath()%>/javascript/newcomer.js"></script>  
-
     </head>
 
     <body>
         <div class="container">
-
             <div class="form-container">
+                
                 <div class="left-container">
                     <div class="left-inner-container">
                         <h2>Welcome!</h2>
@@ -28,6 +38,7 @@
 
                 <div class="right-container">
                     <div class="right-inner-container">
+                        
                         <form action="<%= request.getContextPath() %>/NewcomerServlet" method="post" enctype="multipart/form-data">
                             <h2 class="lg-view">Create Profile</h2>
                             <fieldset>
@@ -54,6 +65,7 @@
                             <input type="submit" id="submit" hidden></button>
                         </form>
                     </div>
+                            
                 </div>
             </div>
         </div>
