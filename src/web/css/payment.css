@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #673AB7;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #673AB7;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #673AB7;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #311B92
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #673AB7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #673AB7;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left;
+    
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #673AB7
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 20%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f2b7"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #package:before {
+    font-family: FontAwesome;
+    content: "\f1cb"
+}
+
+#progressbar #offers:before {
+    font-family: FontAwesome;
+    content: "\f155"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f283"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #673AB7
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #673AB7
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.checkboxes{
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkboxes input {
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  left: 0%;
+}
+
+
+.checkboxes select{
+    position: absolute;
+    left: 48.5%;
+}
+
+
+//Offers
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price-row { 
+    margin: 0 80px;
+    display: grid; 
+    grid-template-columns: 230px 230px; 
+    grid-gap: 30px;    
+    max-height: 10%;
+    max-width: 50%;
+    position: relative;
+} 
+
+.price-col { 
+    transition: box-shadow .5s; 
+    transition: transform; 
+    background: #61677A; 
+    padding: 10% 10%; 
+    border-radius: 10px; 
+    color: #D8D9DA; 
+    text-align: center;    
+} 
+
+
+.price-col2 { 
+    transition: box-shadow .5s; 
+    transition: transform; 
+    background: #61677A; 
+    padding: 10% 10%; 
+    border-radius: 10px; 
+    color: #D8D9DA; 
+    text-align: center;    
+} 
+
+hr { 
+    padding: -10% !important; 
+} 
+
+.price-col:hover { 
+    box-shadow: 0 0 20px rgba(9, 157, 194, 0.2); 
+    transform: scale(1.04); 
+} 
+
+.price-col p { 
+   font-size: 22px; 
+} 
+
+
+.price-col h3 { 
+    color: whitesmoke; 
+    font-size: 30px; 
+    margin: 15px 0 20px; 
+    font-weight: 500; 
+} 
+
+.price-col h3 span { 
+    font-size: 20px; 
+} 
+
+.price-col ul { 
+    text-align: left; 
+    margin: 10px 0; 
+    color: #0C356A; 
+    list-style: none; 
+} 
+
+.price-col ul li { 
+    border-bottom: 2px solid #feffff; 
+    font-size: 15px; 
+    color: #ffffff; 
+    padding: 8px; 
+    text-align: left; 
+} 
+
+.price-col button { 
+    background-color: #EEE0C9; 
+    border: 1px solid white; 
+    border-radius: 5px; 
+    margin: 20px 0 0 0; 
+    color: #001c38; 
+    padding: 10px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 18px; 
+} 
+
+.price-col button:hover { 
+    background: #091c23; 
+    color: white; 
+} 
+
+/* 2nd */
+
+.price-col2:hover { 
+    box-shadow: 0 0 20px rgba(9, 157, 194, 0.2); 
+    transform: scale(1.04); 
+} 
+
+.price-col2 p { 
+    font-size: 22px; 
+} 
+
+.price-col2 h3 { 
+    color: whitesmoke; 
+    font-size: 30px; 
+    margin: 15px 0 20px; 
+    font-weight: 500; 
+} 
+
+.price-col2 h3 span { 
+    font-size: 20px; 
+} 
+
+.price-col2 ul { 
+    text-align: left; 
+    margin: 10px 0; 
+    color: #0C356A; 
+    list-style: none; 
+} 
+
+.price-col2 ul li { 
+    border-bottom: 2px solid #feffff; 
+    font-size: 15px; 
+    color: #ffffff; 
+    padding: 8px; 
+    text-align: left; 
+} 
+
+.price-col2 button { 
+    background-color: #EEE0C9; 
+    border: 1px solid white; 
+    border-radius: 5px; 
+    margin: 20px 0 0 0; 
+    color: #001c38; 
+    padding: 10px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 18px; 
+} 
+
+.price-col2 button:hover { 
+    background: #091c23; 
+    color: white; 
+} 
+
+
+#best { 
+    background: #272829 !important; 
+} 
+
+.standard-title { 
+    font-size: 24px !important; 
+    margin-bottom: 10px; 
+    margin-top: -10px; 
+
+} 
+
+#prem { 
+    color: gold !important; 
+    text-shadow: 1px 1px gold; 
+}

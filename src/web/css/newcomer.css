@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing:border-box;
+    margin:0;
+}
+
+body {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size:10px;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 580px;
+    min-width:370px;
+}
+
+h2 {
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+
+.errorMsg{
+    margin-bottom: 15px;
+}
+
+.form-container {
+    display:flex;
+}
+
+.left-container {
+    flex:1;
+    height:580px;
+    background-color:orange;
+}
+.right-container {
+    display:flex;
+    flex:1;
+    height:580px;
+    background-color: white;
+    justify-content:center;
+    align-items:center;
+}
+
+.left-container {
+    display:flex;
+    flex:1;
+    height: 580px;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.left-container p {
+    font-size:0.9rem;
+}
+
+.right-inner-container {
+    width:70%;
+    height:80%;
+    text-align:center;
+}
+
+.left-inner-container {
+    height:50%;
+    width:80%;
+    text-align:center;
+    line-height:22px;
+}
+
+input, textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size:0.8rem;
+}
+
+input:focus, textarea:focus{
+    outline:1px solid teal;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #00b4cf;
+    background-color: #00b4cf;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor:pointer;
+}
+
+button:hover {
+    opacity:0.7;
+}
+@media only screen and (max-width: 600px) {
+    .left-container{
+        display: none;
+    }
+    .lg-view {
+        display:none;  
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sm-view {
+        display:none;  
+    }
+}
+
+form p {
+    text-align:left;
+}
+
+[data-tip] {
+	position:relative;
+
+}
+
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #1a1a1a;	
+	position:absolute;
+	top:30px;
+	left:35px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	bottom:48px;
+	left:0px;
+	padding:5px 8px;
+	background:#1a1a1a;
+	color:#fff;
+	z-index:9;
+	font-size: 1.2em;
+	height:30px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 5px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+
+[data-tip]:hover:before, [data-tip]:hover:after {
+	display:block;
+}
+
+span.fa-envelope{
+  position: absolute;
+  top: 22%;
+  left: 56%;
+  color: #39cb58;
+}
+
+span.name,span.links > h3,h4{
+  font-family: Lato;
+  /*font-weight: 200;*/
+}
+span.name{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  color: #555;
+  font-size: 18px;
+}
+
+#imagePreview{
+    display: none; 
+    max-width: 80px; 
+    max-height: 80px; 
+    position: relative;
+    left: 34%;
+}
+
+
+span.photo{
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 5px 60px 2.5px;
+  display: block;
+  top: 10%;
+  left: 10%;
+  overflow: hidden;
+  background: #ddd url("https://www.adtechnology.co.uk/images/UGM-default-user.png");
+  background-size: 100%;
+  border-radius: 100%;
+  border: 2px solid #ddd;
+}
+

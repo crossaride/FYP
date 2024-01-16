@@ -1,0 +1,400 @@
+
+/* 
+* IMPORTANT: 
+* Enable smooth scrolling (Chrome) at: 
+* chrome://flags/#smooth-scrolling 
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.main{
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: transparent;
+    margin-right: auto;    
+    margin-left: auto;    
+    margin-bottom: auto;
+    max-width: 100%;    
+    min-width: 1000px;
+    transition: background-color 0.4s ease;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+.navbar ul li a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F0F8FF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/*
+nav{
+    width: 100%;
+    background: #27C46B;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li{
+    float: left;
+}
+
+a{
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+#home{
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,1),
+        rgba(0,0,0,0.35)), url(".../_mat/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+}
+
+#about{
+    height: 1100px;
+    background: whitesmoke;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#service{
+    height: 1250px;
+    background: white;
+    display: inline-block;
+    width: 100%;
+}
+
+#offer{
+    height: 600px;
+    background: #f9f9f9;
+    display: inline-block;
+    width: 100%;
+}
+
+#contact{
+    height: 600px;
+    background: white;
+    display: inline-block;
+    width: 100%;
+}
+
+h1{
+
+    text-align: center;
+    padding: 0;
+}
+
+
+.logo{
+    width: 60px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 19px;
+}
+
+.signin{
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 5px 10px;
+    background: transparent;
+    color: white;
+    border: solid;
+    border-radius: 25px;
+    border-color: green;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.signin:hover{
+    transform: scale(1.1); 
+    background: green;
+}
+.signin:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.getstarted{
+    width: 130px;
+    padding: 9px 0;
+    text-align: center;
+    margin: 25px 10px;
+    background: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: orange;
+    cursor: pointer;
+}
+.getstarted:hover{   
+    background: darkorange; 
+    border-color: darkorange;
+}
+.getstarted span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.getstarted span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.getstarted:hover span {
+    padding-right: 15px;
+}
+.getstarted:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+
+.section-padding {
+    padding: 45px 0;
+}
+.section-dark {
+    background-color: #f9f9f9;
+    z-index: -2;
+}
+.form-control,
+.form-group .form-control {
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 0 2px, 100% 1px;
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center -webkit-calc(100% - 1px);
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background 0s ease-out;
+    -o-transition: background 0s ease-out;
+    transition: background 0s ease-out;
+    float: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0
+}
+
+.form-control::-moz-placeholder,
+.form-group .form-control::-moz-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btnSubmit{
+    background: #E9E9E9;
+    border-color: transparent;
+    border-width: 8px;
+    
+}
+
+.footer-content{
+    padding: 70px 0 0 133px;
+    color: black;
+}
+
+
+
