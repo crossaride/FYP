@@ -1,7 +1,7 @@
 <%-- 
     Document   : account-admin
     Created on : 15-Aug-2023, 14:54:07
-    Author     : kenne
+    Author     : kenneth
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -18,6 +18,7 @@
 
         <!-- Title -->
         <title>My Profile</title>
+
         <!-- Hyperlinks -->
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/customerDashboard.css"> 
     </head>
