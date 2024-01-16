@@ -1,5 +1,5 @@
 <%-- 
-    Document   : account-admin
+    Document   : customer-dashboard
     Created on : 15-Aug-2023, 14:54:07
     Author     : kenneth
 --%>
@@ -10,6 +10,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title -->   
+        <title>Customer Dashboard</title>
+        
         <!-- Misc -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
