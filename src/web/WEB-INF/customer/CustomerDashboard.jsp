@@ -33,10 +33,11 @@
                 <div class="profile-nav col-md-3">
                     <div class="panel">
                         <div class="user-heading round">
-                            <a href="#">
+                            <a href="#"> <!-- Upon clicking the profile pic -->
                                 <img src="<%= request.getContextPath() %>/ProfilePicServlet" alt="image">
                             </a>
-                            <h1><%= session.getAttribute("myName") %></h1>
+                            <!-- What to display under profile pic -->
+                            <h1><%= session.getAttribute("myName") %></h1> 
                             <p><%= session.getAttribute("username") %></p>
                         </div>
 
@@ -87,13 +88,14 @@
                                         </div>
                                         <div class="bio-desk">
                                             <h4 class="red">Your balance:</h4>
-                                            <p>RM : 6.40</p>
+                                            <p>RM : </p> <!-- add element and call from doGet -->
                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                         <!--   <div class="col-md-6">
+                            <!-- Placeholder sections -->
+                            <div class="col-md-6">
                                 <div class="panel">
                                     <div class="panel-body">
                                         <div class="bio-chart">
@@ -134,7 +136,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div> 
                         </div>
                     </div>
                 </div>
