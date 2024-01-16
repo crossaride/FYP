@@ -1,7 +1,7 @@
 <%-- 
     Document   : createAcc_success
     Created on : 14-Nov-2023, 15:41:12
-    Author     : kenne
+    Author     : kenneth
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,7 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv = "refresh" content = "1.5; url = login.jsp" />
+        <meta http-equiv = "refresh" content = "1.5; url = login.jsp" /> <!-- Auto refresh -->
+        <!-- Title -->
         <title>Registration completed</title>
     </head>
     <body>
