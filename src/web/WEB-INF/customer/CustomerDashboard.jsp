@@ -27,7 +27,7 @@
         <div class="container bootstrap snippets bootdey">
             <div class="row">
                 <div class="panel">
-                    <!-- Hyperlinks -->
+                    <!-- Top Nav bar & Hyperlink -->
                 </div>
                 
                 <div class="profile-nav col-md-3">
