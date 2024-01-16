@@ -1,46 +1,44 @@
 <%-- 
     Document   : homepage
     Created on : Dec 12, 2022, 9:08:14 AM
-    Author     : Kenneth
+    Author     : kenneth
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Misc -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        
+
         <!-- Title -->
         <title>Freight Management</title>
-        
-         <!-- Hyperlinks -->       
+
+        <!-- Hyperlinks -->       
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/style.css"> 
         <script type = "text/javascript" src="<%= request.getContextPath()%>/javascript/homepage.js"></script>  
-
     </head>
 
     <body>
-        <div class="main">   
+        <div class="main"> 
+            <!-- Top Nav bar -->
             <div id = "navb" class="navbar fixed-top">
                 <img src = ".../_mat/logo.PNG" class="logo">
-                
-                    <ul>
-                        <li><a href = "#">Home</a></li>
-                        <li><a href = "#about">About Us</a></li>
-                        <li><a href = "#service">Services</a></li>
-                        <li><a href = "#offer">Offers</a></li>
-                        <li><a href = "#contact">Contact Us</a></li>
-                    </ul>        
+                <!-- link to <sections> -->
+                <ul>
+                    <li><a href = "#">Home</a></li>
+                    <li><a href = "#about">About Us</a></li>
+                    <li><a href = "#service">Services</a></li>
+                    <li><a href = "#offer">Offers</a></li>
+                    <li><a href = "#contact">Contact Us</a></li>
+                </ul>        
                 <button class="signin" type="button" onclick="location.href = 'login.jsp';">Sign in</button>
             </div>
         </div>
 
         <!-- Section -->
-
         <div id="home"> 
             <div class="content">
                 <h1>We ship your package with care</h1>
@@ -51,7 +49,7 @@
             </div>
         </div>
 
-
+        <!-- Section2 -->
         <div id="about">
             <div class="bg-light">
                 <div class="container py-5">
@@ -59,19 +57,20 @@
                         <div class="col-lg-6">
                             <h2 class="display-4">About Us!</h2><br>
                             <p class="lead text-muted mb-0" align="justify">
-                                FMS was built as a FYP project, created by a University student. <br><br> FMS aims to help the small-to-mid companies who started their business on pandemic and have no clue on how to manage a system, ex. database management. FMS simplifies the process and helps in Inventory Management, and Delivery Management, including database storage, manage accounts, best route calculation, schedule management, and more.</p>
+                                FMS was built as a FYP project, created by a University student. <br><br> 
+                                FMS aims to help the small-to-mid companies who started their business on pandemic and have no clue on how to manage a system, ex. database management. FMS simplifies the process and helps in Inventory Management, and Delivery Management, including database storage, manage accounts, best route calculation, schedule management, and more.</p>
                         </div>
                         <div class="col-lg-6 d-none d-lg-block"><img src="https://bootstrapious.com/i/snippets/sn-about/illus.png" alt="" class="img-fluid"></div>
                     </div>
                 </div>
             </div>
 
+            <!-- Section3 -->
             <div class="bg-light py-5">
                 <div class="container py-5">
                     <div class="row mb-4">
                         <div class="col-lg-5">
                             <h2 class="display-4 font-weight-light">Our team</h2>
-                            
                         </div>
                     </div>
 
@@ -92,6 +91,7 @@
             </div>
         </div>
 
+        <!-- Section4 -->
         <div id="service">
             <div class="container marketing">
                 <br><br><br><br>
@@ -99,8 +99,10 @@
                     <h2 class="display-4 fw-normal">Services</h2>
                 </div>
 
-                <hr class="featurette-divider"><br>
+                <hr class="featurette-divider"> <!-- divider of section -->
+                <br> 
 
+                <!-- PLACEHOLDERS for image and stuff -->
                 <div class="row featurette">
                     <div class="col-md-7">
                         <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
@@ -112,7 +114,8 @@
                 </div>
 
                 <br><br>
-                <hr class="featurette-divider"><br><br>
+                <hr class="featurette-divider"> <!-- divider of section -->
+                <br><br>
 
                 <div class="row featurette">
                     <div class="col-md-7 order-md-2">
@@ -125,7 +128,8 @@
                 </div>
 
                 <br><br>
-                <hr class="featurette-divider"><br><br>
+                <hr class="featurette-divider"> <!-- divider of section -->
+                <br><br>
 
                 <div class="row featurette">
                     <div class="col-md-7">
@@ -138,10 +142,12 @@
                 </div>
 
                 <br><br>
-                <hr class="featurette-divider"><br><br>
+                <hr class="featurette-divider"> <!-- divider of section -->
+                <br><br> 
             </div>
         </div>
 
+        <!-- Section5 -->
         <div id="offer">
             <br><br><br><p></p>
             <main class="container-carousell">
@@ -205,12 +211,13 @@
 
                 </div>
                 <div class="container py-5">
-                    <hr class="featurette-divider">
+                    <hr class="featurette-divider"> <!-- divider of section -->
                     <br> 
                 </div>
             </main>     
         </div>
 
+        <!-- Section6 -->
         <div id="contact">
             <div class="bg-white py-5">
                 <div class="container py-5">
@@ -266,7 +273,7 @@
                         <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
                     </div>
                     <br>
-                    <hr class="featurette-divider">
+                    <hr class="featurette-divider"> <!-- divider of section -->
                     <p class="float-left"><a href="#">Back to top</a></p>  
                 </div>              
             </div>
