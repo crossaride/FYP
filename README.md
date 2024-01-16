@@ -19,5 +19,5 @@ Java
 - Paypal reference: 
 - - https://developer.paypal.com/sdk/js/configuration/
 - Google API reference:
-- - https://developers.google.com/maps/documentation/javascript/get-api-key
-- - https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-html
+  - https://developers.google.com/maps/documentation/javascript/get-api-key
+  - https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-html
