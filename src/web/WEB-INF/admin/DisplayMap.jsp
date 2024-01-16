@@ -9,10 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Display Map</title>
-        <!-- Links -->
-        <script type = "text/javascript" src="<%= request.getContextPath()%>/javascript/map.js"></script>  
         
+        <!-- Title -->
+        <title>Display Map</title>
+        
+        <!-- Hyperlinks -->
+        <script type = "text/javascript" src="<%= request.getContextPath()%>/javascript/map.js"></script>  
         <!-- API KEY -->
             <!-- Replace "YOUR_API_KEY" with your own API Key -->
             <!-- Replace "FUNCTION_NAME" with your own function name, in my case it's initMap, it will load the map. -->
@@ -20,6 +22,7 @@
     </head>
 
     <body onload="initMap()">
+        <!-- Your map -->
         <div id="googleMap" style="height: 500px;"></div> <!-- You can put css or whatever remember to define map size -->
         <input type = "button" onclick = "routeConfig()" value = "Show Route">      
     </body>
