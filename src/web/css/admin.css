@@ -62,3 +62,13 @@ li a:hover:not(.active) {
   color: white;
 }
 
+.modal-body label{
+    width: 110px;
+    height: 25px;
+}
+
+#openForm{
+    background:green;
+    color:white;
+    width:7.5%; 
+}
