@@ -16,10 +16,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+
         <!-- Title -->
         <title>Admin Dashboard</title>
-        
+
         <!-- Hyperlink -->
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/admin.css">  
     </head>
@@ -28,7 +28,7 @@
             <!-- Top Menu bar -->
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="<%= request.getContextPath() %>/AdminDashboardServlet"><i class="fa fa-cube"></i>FMS</a>  		                               
+                    <a class="navbar-brand" href="<%= request.getContextPath()%>/AdminDashboardServlet"><i class="fa fa-cube"></i>FMS</a>  		                               
                 </div>
 
                 <!-- Elements/Links, search bar of sort-->
@@ -46,13 +46,13 @@
             <!-- Side Nav bar -->
             <div id="content"> 
                 <nav class="sidenav">
-                    <ul style="list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: #f1f1f1;">
-                    <li><a class="active" href="<%= request.getContextPath() %>/AdminDashboardServlet">Home</a></li>
-                    <li><a href="#news">Warehouse Management</a></li>
-                    <li><a href="<%= request.getContextPath() %>/AccountManagementServlet">Account Management</a></li>
-                    <li><a href="#contact">Delivery Management</a></li>
-                    <li><a href="<%= request.getContextPath() %>/redirectMapServlet">View Schedule</a></li>
-                </ul>
+                    <ul id="dash-sidenav">
+                        <li><a class="active" href="<%= request.getContextPath()%>/AdminDashboardServlet">Home</a></li>
+                        <li><a href="#news">Warehouse Management</a></li>
+                        <li><a href="<%= request.getContextPath()%>/AccountManagementServlet">Account Management</a></li>
+                        <li><a href="#contact">Delivery Management</a></li>
+                        <li><a href="<%= request.getContextPath()%>/redirectMapServlet">View Schedule</a></li>
+                    </ul>
                 </nav>       
             </div>           
         </form>
