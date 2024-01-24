@@ -41,7 +41,7 @@
                         <!--  <li><a href="#" class="notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a></li> -->
                         <!--  <li><a href="#" class="messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></li> -->
 
-                        <li><a><label for="">Welcome back, <%= session.getAttribute("username")%>!</label></a></li>
+                        <li><a><label for="">Hi, <%= session.getAttribute("username")%>!</label></a></li>
                         <li class="divider"></li>
                         <li><a href="LogoutServlet"><span class ="icon-red"><i class="material-icons">&#xE8AC;</i></span></a></li>
                     </ul>
