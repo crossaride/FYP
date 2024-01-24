@@ -33,7 +33,7 @@
             <!-- Menu bar -->
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                    <a class="navbar-brand" ><i class="fa fa-cube"></i>FMS</a>  		                               
+                    <a class="navbar-brand" href="<%= request.getContextPath() %>/AdminDashboardServlet"><i class="fa fa-cube"></i>FMS</a>  		                               
                 </div>
 
                 <div id="navbarCollapse" class="collapse navbar-collapse">
