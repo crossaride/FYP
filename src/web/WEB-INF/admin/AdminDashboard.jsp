@@ -38,20 +38,22 @@
                         <!--  <li><a href="#" class="messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></li> -->
                         <li><a><label for="">Welcome back, <%= session.getAttribute("username")%>!</label></a></li>
                         <li class="divider"></li>
-                        <li><a href="LogoutServlet"><span class ="icon-red"><i class="material-icons">&#xE8AC;</i></span></li>
+                        <li><a href="LogoutServlet"><span class ="icon-red"><i class="material-icons">&#xE8AC;</i></span></a></li>
                     </ul>
                 </div>  
             </nav>
 
             <!-- Side Nav bar -->
             <div id="content"> 
-                <ul style="list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: #f1f1f1;">
-                    <li><a class="active" href="<%= request.getContextPath() %>/AdminDashboardServlet" >Home</a></li>
+                <nav class="sidenav">
+                    <ul style="list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: #f1f1f1;">
+                    <li><a class="active" href="<%= request.getContextPath() %>/AdminDashboardServlet">Home</a></li>
                     <li><a href="#news">Warehouse Management</a></li>
                     <li><a href="<%= request.getContextPath() %>/AccountManagementServlet">Account Management</a></li>
                     <li><a href="#contact">Delivery Management</a></li>
                     <li><a href="<%= request.getContextPath() %>/redirectMapServlet">View Schedule</a></li>
                 </ul>
+                </nav>       
             </div>           
         </form>
     </body>
