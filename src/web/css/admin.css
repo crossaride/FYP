@@ -1,3 +1,7 @@
+body{
+    background-color: ghostwhite;  
+}
+
 
 .form-inline {
     display: block;
@@ -62,13 +66,14 @@ li a:hover:not(.active) {
   color: white;
 }
 
-.modal-body label{
-    width: 110px;
-    height: 25px;
+#dash-sidenav{
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 200px; 
+    background-color: #f1f1f1;
 }
 
-#openForm{
-    background:green;
-    color:white;
-    width:7.5%; 
+.sidenav{
+    margin-left: 3px;
 }
