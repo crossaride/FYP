@@ -13,17 +13,22 @@ $(document).ready(function () {
     var steps = $("fieldset").length;
     setProgressBar(current);
 
-    $(".next").click(function () {
+    $(".next").click(function () { 
 
         if(clickCount == 0){ //1st click
             checkNext(); // into 1 or 0
            
         }else if(clickCount == 1){ //2nd click
             checkNext2();
-  
+
         }else if(clickCount == 2){ //3rd click
             checkNext3(); 
-            handleFileUpload();
+            //check if upload file is empty
+            var fileInput = document.getElementById('pic').files.length;  
+            if(fileInput!= 0){
+                handleFileUpload();
+            }
+
         }else if(clickCount == 3){ //4th click
             checkNext4(); 
             displayPrice();   
@@ -240,15 +245,15 @@ function displayPrice(){
         totalPrice += 2;
     }
     
-    if(pweight == "weight1"){
+    if(pweight == "lessthan1kg"){
         totalPrice += 4.9;
-    }else if(pweight == "weight2"){
+    }else if(pweight == "1kg-10kg"){
         totalPrice += 4.9;
-    }else if(pweight == "weight3"){
+    }else if(pweight == "11kg-30kg"){
         totalPrice += 9.9;
-    }else if(pweight == "weight4"){
+    }else if(pweight == "31kg-50kg"){
         totalPrice += 14.9;
-    }else if(pweight == "weight5"){
+    }else if(pweight == "morethan50kg"){
         totalPrice += 20;
     }else{
         console.log("ERROR: WEIGHT IS EMPTY!");
