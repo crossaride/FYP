@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <!-- Misc -->
         <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -21,7 +21,6 @@
 
         <!-- Title -->
         <title>Account Management</title>
-
         <!-- Hyperlinks -->
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/admin.css">  
         <link rel="stylesheet" href="<%= request.getContextPath()%>/css/adminTable.css">
@@ -52,7 +51,7 @@
         <br>
 
          <!-- Open form button --> 
-        <button id="openForm" class="form-control" data-toggle="modal" data-target="#addModal" style="background:green;color:white;width:7%; "> Add new... <i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+        <button id="openForm" class="form-control" data-toggle="modal" data-target="#addModal" ><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp; Add new</button>
         <p></p>
         <!-- Modal form config --> 
         <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
