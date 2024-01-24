@@ -46,7 +46,7 @@
             <!-- Side Nav bar -->
             <div id="content"> 
                 <ul style="list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: #f1f1f1;">
-                    <li><a class="active" href="<%= request.getContextPath() %>/AdminDashboard.jsp" >Home</a></li>
+                    <li><a class="active" href="<%= request.getContextPath() %>/AdminDashboardServlet" >Home</a></li>
                     <li><a href="#news">Warehouse Management</a></li>
                     <li><a href="<%= request.getContextPath() %>/AccountManagementServlet">Account Management</a></li>
                     <li><a href="#contact">Delivery Management</a></li>
